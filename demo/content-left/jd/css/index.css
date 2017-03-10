@@ -1,0 +1,358 @@
+body {
+    background: #f5f5f5;
+}
+.jd-layout {
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+}
+/*搜索头部*/
+.jd-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    z-index: 999;
+}
+/*搜索头部的内容*/
+.jd-header .jd-header-box {
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    background: rgba(201,21,35,0);
+    height: 40px;
+}
+
+.jd-header .jd-header-box .icon-logo {
+    background-position: 0 -103px;
+    width: 60px;
+    height: 36px;
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+}
+
+.jd-header form {
+    width: 100%;
+    height: 40px;
+    padding-left: 75px;
+    padding-right: 55px;
+    position: relative;
+}
+
+/*搜索按钮*/
+.jd-header form .icon-search {
+    background-position:-60px -109px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 85px;
+}
+
+.jd-header form input {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding-left: 30px;
+}
+
+/* 登录*/
+.jd-header .login {
+    width: 50px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*轮播图*/
+.jd-banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.jd-banner ul:first-child {
+    width: 1000%;
+    /*让第二张在index首页中显示
+       translateX 在 X 轴上移动 10% 的距离
+    */
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+}
+.jd-banner ul:first-child li {
+    width: 10%;
+    float: left;
+}
+.jd-banner ul:first-child li img {
+    width: 100%;
+    display: block;
+}
+
+/*点*/
+.jd-banner ul:last-child {
+    width: 118px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -59px;
+    bottom: 10px;
+}
+.jd-banner ul:last-child li {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-left: 10px;
+    float: left;
+}
+.jd-banner ul:last-child li:first-child {
+    margin-left: 0;
+}
+.jd-banner ul:last-child li.now {
+    background: #fff;
+}
+/*导航栏*/
+.jd-nav {
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 3.125%;
+    background: #fff;
+    padding-top: 11px;
+}
+.jd-nav ul {
+    width: 100%;
+}
+.jd-nav ul li {
+    width: 25%;
+    height: 69px;
+    float: left;
+}
+.jd-nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.jd-nav ul li a img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+.jd-nav ul li a P {
+    font-size: 12px;
+    color: #666;
+    margin-top: 6px;
+}
+
+/*商品区块*/
+.jd-product {
+    margin: 0 5px;
+}
+/*公共使用的商品盒子*/
+.jd-product .jd-product-box {
+    box-shadow: 0 0 1px 1px #e0e0e0;
+    margin-top: 8px;
+}
+/*盒子的上面*/
+.jd-product .jd-product-box .product-top {
+    height: 32px;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+}
+/*没有边框*/
+.jd-product .jd-product-box .product-top.no-bor {
+    border-bottom: none;
+}
+.jd-product .jd-product-box .product-top h3 {
+    font-size: 15px;
+    color: #666;
+    padding-left: 15px;
+    font-weight: inherit;  /* 设置更细的字体*/
+    line-height: 32px;
+}
+.jd-product .jd-product-box .product-top h3::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 12px;
+    background: #d8505c;
+
+    position: absolute;
+    top: 10px;
+    left: 8px;
+}
+
+
+.jd-product .jd-product-box .product-bot {
+
+}
+
+/*秒杀*/
+.jd-secondKill {
+
+}
+.jd-secondKill .jd-secondKill-left {
+    float: left;
+}
+.jd-secondKill .jd-secondKill-left .sk-icon {
+    background: url("../images/seckill-icon.png") no-repeat;
+    background-size: 16px 20px;
+    width: 16px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin-left: 8px;
+    margin-top: 6px;
+}
+.jd-secondKill .jd-secondKill-left .sk-name {
+    font-size: 15px;
+    color: #d8505c;
+    font-weight: inherit;
+    float: left;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.jd-secondKill .jd-secondKill-left .sk-time{
+    float: left;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.jd-secondKill .jd-secondKill-left .sk-time .num {
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    float: left;
+    line-height: 15px;
+    margin-left: 3px;
+}
+.jd-secondKill .jd-secondKill-left .sk-time .str {
+    display: block;
+    width: 4px;
+    height: 15px;
+    text-align: center;
+    float: left;
+    line-height: 15px;
+    margin-left: 3px;
+}
+/*更多*/
+.jd-secondKill .jd-secondKill-right {
+    float: right;
+}
+.jd-secondKill .jd-secondKill-right a {
+    line-height: 32px;
+    margin-right: 10px;
+}
+/*三个商品*/
+.jd-secondKill .product-bot {
+    width: 100%;
+}
+.jd-secondKill .product-bot ul {
+    width: 100%;
+    padding: 10px 0;
+}
+.jd-secondKill .product-bot ul li {
+    width: 33.333%;
+    float: left;
+}
+.jd-secondKill .product-bot ul li a {
+    width: 100%;
+}
+.jd-secondKill .product-bot ul li a .img-box {
+    width: 100%;
+    border-right: 1px solid #e0e0e0;
+}
+.jd-secondKill .product-bot ul li:last-child a .img-box {
+    border-right: none;
+}
+.jd-secondKill .product-bot ul li a .img-box img {
+    width: 64%;
+    display: block;
+    margin: 0 auto;
+}
+.jd-secondKill .product-bot ul li a .now-price {
+    color: #d8505c;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 3px;
+}
+.jd-secondKill .product-bot ul li a .old-price {
+    font-size: 12px;
+    text-decoration: line-through;  /* 删除线*/
+    margin-top: 3px;
+    text-align: center;
+    color: #888;
+}
+/*超值购*/
+.jd-product .jd-pd .product-bot {
+    width: 100%;
+}
+/*左边的大图片*/
+.jd-product .jd-pd .product-bot .p-left {
+    width: 50%;
+    float: left;
+}
+/*右边的图片*/
+.jd-product .jd-pd .product-bot .p-right {
+    width: 50%;
+    float: right;
+}
+/*左边框*/
+.jd-product .jd-pd .product-bot .b-left {
+    border-left: 1px solid #e0e0e0;
+}
+/*右边框*/
+.jd-product .jd-pd .product-bot .b-right {
+    border-right: 1px solid #e0e0e0;
+}
+/*下边框*/
+.jd-product .jd-pd .product-bot .b-bottom {
+    border-bottom: 1px solid #e0e0e0;
+}
+.jd-product .jd-pd .product-bot a img {
+    width: 100%;
+    display: block;  /* 去掉图片的空隙*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

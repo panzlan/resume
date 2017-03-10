@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 跳动的心</title>
+    <style>
+        .heart {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            position: relative;
+            background-color: #4d52ff;
+        }
+
+        .left {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            left: -70px;
+        }
+
+        .right {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            right: -94px;
+        }
+
+        .bottom {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            bottom: -81px;
+            left: 12px;
+        }
+
+        .left, .right {
+            border-radius: 100px;
+        }
+
+        .left, .right, .bottom {
+            animation: move 1s infinite;    //  infinite  无限循环
+        }
+
+        @keyframes move {
+            0% {
+                transform: scale(1) rotate(45deg);
+            }
+
+            50% {
+                transform: scale(1.2) rotate(45deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="heart">
+    <span class="left"></span>
+    <span class="right"></span>
+    <span class="bottom"></span>
+</div>
+</body>
+</html>
